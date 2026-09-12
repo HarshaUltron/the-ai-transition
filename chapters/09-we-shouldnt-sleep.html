@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +38,7 @@ h1 {
 
 h2 {
     font-size: 26px;
+    color: #263f5b;
     margin-top: 55px;
 }
 
@@ -47,21 +47,85 @@ p {
     margin: 22px 0;
 }
 
+strong {
+    color: #263f5b;
+}
+
 blockquote {
-    border-left: 3px solid #222;
+    border-left: 3px solid #263f5b;
     margin: 40px 0;
     padding: 5px 25px;
     font-size: 21px;
     font-style: italic;
 }
 
-.back {
-    display: inline-block;
+.highlight {
+    background: #eeece6;
+    border-left: 4px solid #263f5b;
+    padding: 20px 25px;
+    margin: 40px 0;
+}
+
+.highlight p {
+    margin: 10px 0;
+}
+
+.movie-section {
+    margin-top: 80px;
+    padding: 35px 25px;
+    background: #e9e7e1;
+    text-align: center;
+}
+
+.movie-section h2 {
+    margin-top: 0;
+}
+
+.movie-quote {
+    font-size: 24px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+.movie-response {
+    font-size: 25px;
+    font-weight: bold;
+    color: #263f5b;
+    margin-top: 25px;
+}
+
+.movie-caption {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #777;
+    margin-top: 25px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 60px;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+}
+
+.navigation a {
     text-decoration: none;
-    color: #222;
+    color: #263f5b;
+    font-size: 14px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.back a {
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
 }
 
 .footer {
@@ -271,8 +335,12 @@ Because if we wait until the outcome is obvious, the opportunity to prepare for 
 
 <h2>The Titanic analogy</h2>
 
+<div class="highlight">
+
 <p>
+<strong>
 Sometimes technological transitions remind me of the story of the Titanic.
+</strong>
 </p>
 
 <p>
@@ -286,6 +354,8 @@ But because confidence can become dangerous when it turns into complacency.
 <p>
 A system can appear enormous, successful and stable right up until the assumptions underneath it are challenged.
 </p>
+
+</div>
 
 <p>
 Software engineering is not going to disappear overnight.
@@ -387,10 +457,47 @@ But it is being built right now.
 We shouldn't wait until the change is undeniable before we start understanding its consequences.
 </p>
 
-<a class="back" href="/the-ai-transition/">← Back to The AI Transition</a>
+<div class="movie-section">
+
+<h2>One Last Question</h2>
+
+<p>
+There is a scene from <em>I, Robot</em> that captures a similar question beautifully.
+</p>
+
+<div class="movie-quote">
+"Can a robot write a symphony?<br>
+Can a robot turn a canvas into a beautiful masterpiece?"
+</div>
+
+<div class="movie-response">
+"Can you?"
+</div>
+
+<p class="movie-caption">
+I, Robot (2004)
+</p>
+
+</div>
+
+<div class="navigation">
+
+    <a href="/the-ai-transition/chapters/08-im-25.html">
+        ← I'm 25
+    </a>
+
+    <span></span>
+
+</div>
+
+<div class="back">
+    <a href="/the-ai-transition/">
+        ← Back to The AI Transition
+    </a>
+</div>
 
 <div class="footer">
-The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
+    The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
 </div>
 
 </div>
