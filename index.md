@@ -85,7 +85,7 @@ A personal perspective on entering adulthood and a career during one of the bigg
 
 The conclusion: neither panic nor blind optimism is enough. We need to start thinking about the transition before it becomes unavoidable.
 
-[Read Chapter 9 →](chapters/09-we-shouldnt_sleep.md)
+[Read Chapter 9 →](chapters/09-we-shouldnt-sleep.md)
 
 ---
 
