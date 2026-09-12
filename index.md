@@ -1,8 +1,5 @@
 
----
-layout: default
-title: The AI Transition
----
+
 
 # THE AI TRANSITION
 
