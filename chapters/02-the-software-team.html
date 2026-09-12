@@ -1,312 +1,444 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Software Team — The AI Transition</title>
-  <style>
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 25px;
-      line-height: 1.8;
-      color: #222;
-      background: #faf9f6;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 02 — The Software Team</title>
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
+<style>
+body {
+    margin: 0;
+    background: #f7f5f0;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+}
 
-    h2 {
-      margin-top: 50px;
-    }
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 70px 25px 100px;
+}
 
-    a {
-      color: #333;
-    }
+.chapter {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 15px;
+}
 
-    .chapter {
-      color: #777;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-    }
+h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 0 0 45px;
+}
 
-    blockquote {
-      border-left: 3px solid #999;
-      padding-left: 20px;
-      margin: 30px 0;
-      font-size: 1.15rem;
-      font-style: italic;
-    }
+h2 {
+    font-size: 26px;
+    color: #263f5b;
+    margin-top: 55px;
+}
 
-    .back {
-      margin-top: 60px;
-    }
-  </style>
+p {
+    font-size: 18px;
+    margin: 22px 0;
+}
+
+blockquote {
+    border-left: 3px solid #263f5b;
+    margin: 40px 0;
+    padding: 5px 25px;
+    font-size: 21px;
+    font-style: italic;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #263f5b;
+}
+
+.footer {
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+}
+</style>
 </head>
 
 <body>
 
-  <p class="chapter">Chapter 02</p>
+<div class="container">
 
-  <h1>The Software Team</h1>
+<div class="chapter">Chapter 02</div>
 
-  <p>
-    To understand what AI might change, it helps to first understand
-    what a software team traditionally looks like.
-  </p>
+<h1>The Software Team</h1>
 
-  <p>
-    A software product is rarely built by one person doing everything.
-    Different people take responsibility for different parts of the
-    process.
-  </p>
+<p>
+To understand what AI could change, it helps to first look at how software is traditionally built.
+</p>
 
-  <p>
-    There is the developer who writes the application.
-  </p>
+<p>
+A software project is rarely just one person sitting in front of a computer writing code.
+</p>
 
-  <p>
-    There is QA, making sure the application actually works and
-    identifying what breaks.
-  </p>
+<p>
+There are usually multiple roles involved.
+</p>
 
-  <p>
-    There is DevOps, responsible for infrastructure, deployments,
-    environments, monitoring and reliability.
-  </p>
+<h2>The Developer</h2>
 
-  <p>
-    There are architects thinking about how the system should be
-    structured and how its different components should work together.
-  </p>
+<p>
+The developer turns requirements into working software.
+</p>
 
-  <p>
-    And there are managers coordinating people, priorities, timelines,
-    stakeholders and expectations.
-  </p>
+<p>
+They write code, build APIs, connect databases, implement business logic, fix bugs and integrate different systems.
+</p>
 
-  <p>
-    None of these roles exists in isolation.
-  </p>
+<p>
+For a long time, this was considered one of the most technically demanding parts of software development.
+</p>
 
-  <p>
-    They form a chain.
-  </p>
+<h2>The QA Engineer</h2>
 
-  <p>
-    A requirement becomes a design.
-    A design becomes code.
-    Code becomes a tested application.
-    The application gets deployed.
-    Someone monitors it.
-    Someone decides what should happen next.
-  </p>
+<p>
+Then there is QA.
+</p>
 
-  <p>
-    For decades, this division of work has been a practical way of
-    building software.
-  </p>
+<p>
+The QA engineer tests what the developer built.
+</p>
 
-  <h2>Then AI enters the team</h2>
+<p>
+They think about what could go wrong, create test cases, reproduce bugs, validate fixes and make sure the software behaves as expected.
+</p>
 
-  <p>
-    Now imagine giving an AI system the requirements, the existing
-    codebase, the expected behaviour, the constraints and access to
-    the tools required to execute the work.
-  </p>
+<p>
+Their job isn't simply to confirm that the happy path works.
+</p>
 
-  <p>
-    It can potentially write the implementation.
-  </p>
+<p>
+It is to find the paths nobody thought about.
+</p>
 
-  <p>
-    It can generate tests.
-  </p>
+<h2>The DevOps Engineer</h2>
 
-  <p>
-    It can inspect logs and diagnose failures.
-  </p>
+<p>
+Then comes infrastructure and deployment.
+</p>
 
-  <p>
-    It can suggest architectural changes.
-  </p>
+<p>
+Someone has to make sure the application can actually run.
+</p>
 
-  <p>
-    It can generate deployment configurations.
-  </p>
+<p>
+Cloud infrastructure, containers, CI/CD pipelines, networking, monitoring, secrets, scaling and production deployments all become part of the picture.
+</p>
 
-  <p>
-    It can produce documentation.
-  </p>
+<p>
+That is where DevOps and platform engineers come in.
+</p>
 
-  <p>
-    And increasingly, AI agents can execute multi-step workflows rather
-    than simply responding to individual prompts.
-  </p>
+<h2>The Architect</h2>
 
-  <p>
-    Suddenly the boundaries between these roles start becoming less
-    rigid.
-  </p>
+<p>
+Above the implementation details, there is architecture.
+</p>
 
-  <h2>The developer</h2>
+<p>
+Someone has to decide how the different components should fit together.
+</p>
 
-  <p>
-    The most obvious change is to software development itself.
-  </p>
+<p>
+Should the system use a monolith or microservices?
+</p>
 
-  <p>
-    Writing code is becoming dramatically easier.
-  </p>
+<p>
+Which database should be used?
+</p>
 
-  <p>
-    A developer can describe a feature and have an AI generate much of
-    the implementation.
-  </p>
+<p>
+Where should caching happen?
+</p>
 
-  <p>
-    That does not make engineering irrelevant.
-  </p>
+<p>
+How should the system scale?
+</p>
 
-  <p>
-    But it can change where the engineer spends their time.
-  </p>
+<p>
+What happens if a service fails?
+</p>
 
-  <p>
-    Less time typing every line.
-    More time understanding the problem, reviewing the implementation,
-    debugging unexpected behaviour and deciding what should actually
-    be built.
-  </p>
+<p>
+How do we keep the system secure and maintainable?
+</p>
 
-  <h2>QA</h2>
+<p>
+These decisions can affect a system for years.
+</p>
 
-  <p>
-    Testing is also increasingly automatable.
-  </p>
+<h2>The Manager</h2>
 
-  <p>
-    AI can generate test cases, identify edge cases, analyse failures
-    and help reproduce bugs.
-  </p>
+<p>
+And then there is management.
+</p>
 
-  <p>
-    That doesn't mean quality becomes automatic.
-  </p>
+<p>
+Someone has to understand the business requirement, coordinate people, manage timelines, communicate with stakeholders, resolve dependencies and make sure the team is actually delivering what the business needs.
+</p>
 
-  <p>
-    Someone still needs to determine whether the system behaves
-    correctly in the real world.
-  </p>
+<p>
+So a typical software project might look something like this:
+</p>
 
-  <p>
-    The definition of "correct" is often larger than whether a test
-    passed.
-  </p>
+<blockquote>
+Requirement → Design → Development → Testing → Deployment → Monitoring → Delivery
+</blockquote>
 
-  <h2>DevOps</h2>
+<p>
+Different people may own different parts of that process.
+</p>
 
-  <p>
-    Infrastructure work is changing too.
-  </p>
+<p>
+Now comes the interesting part.
+</p>
 
-  <p>
-    AI can generate deployment configurations, analyse logs, suggest
-    fixes and help operate cloud environments.
-  </p>
+<h2>What if we give AI the whole problem?</h2>
 
-  <p>
-    But production systems have consequences.
-  </p>
+<p>
+Most conversations about AI and software development focus on individual tasks.
+</p>
 
-  <p>
-    A bad deployment isn't just a bad answer in a chat window.
-    It can cause downtime, data loss, security incidents or financial
-    damage.
-  </p>
+<p>
+"Can AI write this function?"
+</p>
 
-  <h2>Architecture</h2>
+<p>
+"Can AI create a unit test?"
+</p>
 
-  <p>
-    Architecture may look safer because it involves higher-level
-    reasoning.
-  </p>
+<p>
+"Can AI fix this bug?"
+</p>
 
-  <p>
-    But AI can already propose architectures, compare technologies and
-    reason about trade-offs.
-  </p>
+<p>
+"Can AI deploy this application?"
+</p>
 
-  <p>
-    The interesting question is therefore not whether AI can produce
-    an architecture diagram.
-  </p>
+<p>
+But what if we stop thinking about these as separate tasks?
+</p>
 
-  <p>
-    It is whether the proposed architecture is actually appropriate
-    for this particular organisation, this particular product and
-    these particular constraints.
-  </p>
+<p>
+What if I give AI everything at once?
+</p>
 
-  <h2>Management</h2>
+<p>
+Imagine that I give an AI system the complete business requirement, the problem we are trying to solve, the expected outcome, the existing codebase, the database schema, the technical constraints, the security requirements, the deployment environment and all the other context that the team would normally need.
+</p>
 
-  <p>
-    Even management contains tasks that AI can increasingly assist with:
-    summarising meetings, tracking work, analysing progress, writing
-    updates and identifying risks.
-  </p>
+<p>
+And then I give it one big instruction:
+</p>
 
-  <p>
-    But management also involves people, incentives, conflict,
-    accountability and decisions under uncertainty.
-  </p>
+<blockquote>
+"Understand this problem and build the complete solution."
+</blockquote>
 
-  <p>
-    Those responsibilities don't disappear simply because information
-    becomes easier to process.
-  </p>
+<p>
+Now imagine what that system could potentially do.
+</p>
 
-  <h2>The uncomfortable possibility</h2>
+<p>
+It could break the requirement into smaller tasks.
+</p>
 
-  <p>
-    The real disruption may therefore not be that one AI replaces one
-    job.
-  </p>
+<p>
+It could propose an architecture.
+</p>
 
-  <p>
-    It may be that AI changes the amount of human labour required
-    across the entire software development process.
-  </p>
+<p>
+It could write the implementation.
+</p>
 
-  <p>
-    A team that once required seven people might eventually accomplish
-    a similar amount of work with three highly capable engineers using
-    AI.
-  </p>
+<p>
+It could create tests.
+</p>
 
-  <blockquote>
-    The question then becomes bigger than:
-    <br><br>
-    <strong>Can AI do my job?</strong>
-    <br><br>
-    It becomes:
-    <br><br>
-    <strong>How many people will companies need to do the same amount of work?</strong>
-  </blockquote>
+<p>
+It could analyse test failures and modify the implementation.
+</p>
 
-  <p>
-    And that is where the conversation becomes much more complicated.
-  </p>
+<p>
+It could generate documentation.
+</p>
 
-  <p class="back">
-    <a href="../">← Back to The AI Transition</a>
-  </p>
+<p>
+It could prepare deployment configurations.
+</p>
+
+<p>
+It could interact with cloud infrastructure.
+</p>
+
+<p>
+It could monitor the system and respond to failures.
+</p>
+
+<p>
+And if multiple AI agents are working together, each one could potentially handle a different part of the workflow.
+</p>
+
+<p>
+At that point, we are no longer asking:
+</p>
+
+<blockquote>
+"Can AI write code?"
+</blockquote>
+
+<p>
+We are asking something much bigger:
+</p>
+
+<blockquote>
+"If one sufficiently capable AI system can perform the work traditionally distributed across developers, QA engineers, DevOps engineers and even parts of architecture and project coordination, what happens to the team that used to perform that work?"
+</blockquote>
+
+<h2>The uncomfortable thought</h2>
+
+<p>
+This is where the question becomes difficult.
+</p>
+
+<p>
+Because if AI can perform individual tasks, we can simply say that engineers will use AI as a tool.
+</p>
+
+<p>
+But what if the tool becomes capable of performing an entire workflow?
+</p>
+
+<p>
+What if the developer doesn't disappear, but one developer with AI can accomplish what several developers previously accomplished?
+</p>
+
+<p>
+What if QA becomes partially automated?
+</p>
+
+<p>
+What if deployment becomes increasingly autonomous?
+</p>
+
+<p>
+What if architecture can be generated and evaluated by AI?
+</p>
+
+<p>
+What if project coordination itself becomes increasingly automated?
+</p>
+
+<p>
+Then the question is no longer just about replacing a particular job.
+</p>
+
+<p>
+It becomes a question about how many people are needed to produce the same amount of software.
+</p>
+
+<p>
+And that is a much more uncomfortable question.
+</p>
+
+<p>
+Because the answer could be:
+</p>
+
+<blockquote>
+Fewer people.
+</blockquote>
+
+<p>
+But there is an important problem with stopping the discussion there.
+</p>
+
+<p>
+Even if AI can perform all these tasks, that doesn't automatically mean it should make every decision.
+</p>
+
+<p>
+A technically possible solution is not necessarily the right solution.
+</p>
+
+<p>
+The cheapest architecture may not be the safest.
+</p>
+
+<p>
+The fastest implementation may not be the most maintainable.
+</p>
+
+<p>
+The most scalable solution may be unnecessary for the actual business.
+</p>
+
+<p>
+And a solution that looks perfect technically may still fail because it misunderstands what the customer actually wanted.
+</p>
+
+<p>
+So perhaps the most interesting question isn't whether AI can do the work.
+</p>
+
+<p>
+It is what happens when AI becomes capable of doing most of it, while humans are still responsible for deciding what should actually be done.
+</p>
+
+<p>
+That leads directly to the next question.
+</p>
+
+<blockquote>
+But what if AI can do that too?
+</blockquote>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 60px; font-family: Arial, sans-serif;">
+
+    <a href="/the-ai-transition/chapters/01-the-question.html"
+       style="text-decoration: none; color: #263f5b; font-size: 14px;">
+        ← The Question
+    </a>
+
+    <a href="/the-ai-transition/chapters/03-but-ai-can-do-that-too.html"
+       style="text-decoration: none; color: #263f5b; font-size: 14px;">
+        But AI Can Do That Too →
+    </a>
+
+</div>
+
+<div style="text-align: center; margin-top: 30px; font-family: Arial, sans-serif;">
+    <a href="/the-ai-transition/"
+       style="text-decoration: none; color: #777; font-size: 13px;">
+        ← Back to The AI Transition
+    </a>
+</div>
+
+<div class="footer">
+The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
+</div>
+
+</div>
 
 </body>
 </html>
