@@ -1,363 +1,639 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Learning Treadmill — The AI Transition</title>
-  <style>
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 25px;
-      line-height: 1.8;
-      color: #222;
-      background: #faf9f6;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    h2 {
-      margin-top: 50px;
-    }
-    a {
-      color: #333;
-    }
-    .chapter {
-      color: #777;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-    }
-    blockquote {
-      border-left: 3px solid #999;
-      padding-left: 20px;
-      margin: 30px 0;
-      font-size: 1.15rem;
-      font-style: italic;
-    }
-    .back {
-      margin-top: 60px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 07 — The Learning Treadmill</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f7f5f0;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 70px 25px 100px;
+}
+
+.chapter {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 0 0 45px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #263f5b;
+    margin-top: 55px;
+}
+
+p {
+    font-size: 18px;
+    margin: 22px 0;
+}
+
+strong {
+    color: #263f5b;
+}
+
+blockquote {
+    border-left: 3px solid #263f5b;
+    margin: 40px 0;
+    padding: 5px 25px;
+    font-size: 21px;
+    font-style: italic;
+}
+
+.highlight {
+    background: #eeece6;
+    border-left: 4px solid #263f5b;
+    padding: 20px 25px;
+    margin: 35px 0;
+}
+
+.highlight p {
+    margin: 10px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #263f5b;
+    font-size: 14px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.back a {
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+}
+
+.footer {
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+}
+</style>
 </head>
 
 <body>
 
-  <p class="chapter">Chapter 07</p>
-
-  <h1>The Learning Treadmill</h1>
+<div class="container">
 
-  <p>
-    There is another consequence of the AI transition that is easy to
-    overlook.
-  </p>
+<div class="chapter">Chapter 07</div>
 
-  <p>
-    Even if AI doesn't eliminate your job, it may change what it takes
-    to remain employable.
-  </p>
-
-  <p>
-    And that can create a different kind of pressure.
-  </p>
-
-  <h2>Work. Learn. Repeat.</h2>
+<h1>The Learning Treadmill</h1>
 
-  <p>
-    For many engineers, the cycle already looks familiar.
-  </p>
+<p>
+There is another consequence of the AI transition that is easy to overlook.
+</p>
 
-  <p>
-    Work during the day.
-  </p>
+<p>
+Even if AI does not replace you, it may change what it means to remain valuable.
+</p>
 
-  <p>
-    Learn something new after work.
-  </p>
+<p>
+The expectation to keep learning has always existed in technology.
+</p>
 
-  <p>
-    Study a new framework.
-  </p>
+<p>
+A developer learns a programming language.
+</p>
 
-  <p>
-    Learn a new cloud service.
-  </p>
+<p>
+Then a framework.
+</p>
 
-  <p>
-    Understand the latest AI model.
-  </p>
+<p>
+Then cloud.
+</p>
 
-  <p>
-    Practice system design.
-  </p>
+<p>
+Then containers.
+</p>
 
-  <p>
-    Solve coding problems.
-  </p>
+<p>
+Then Kubernetes.
+</p>
 
-  <p>
-    Prepare for interviews.
-  </p>
+<p>
+Then AI.
+</p>
 
-  <p>
-    Then go back to work and start again.
-  </p>
+<p>
+Then agents.
+</p>
 
-  <p>
-    The technology changes.
-    The learning never seems to stop.
-  </p>
+<p>
+Then another model.
+</p>
 
-  <h2>AI makes the treadmill faster</h2>
+<p>
+And another platform.
+</p>
 
-  <p>
-    AI may actually accelerate this cycle.
-  </p>
+<p>
+The cycle never seems to stop.
+</p>
 
-  <p>
-    If AI makes engineers more productive, companies may expect more
-    from each engineer.
-  </p>
+<h2>The treadmill gets faster</h2>
 
-  <p>
-    If tools become easier to use, the baseline expectation may rise.
-  </p>
+<p>
+AI may make that cycle even faster.
+</p>
 
-  <p>
-    If one engineer can accomplish more, then being "good enough" today
-    may not mean being good enough five years from now.
-  </p>
+<p>
+A technology that was considered advanced a year ago can suddenly become ordinary.
+</p>
 
-  <p>
-    The result could be a strange paradox:
-  </p>
+<p>
+A workflow that required specialised knowledge can become something an AI assistant can perform.
+</p>
 
-  <blockquote>
-    <strong>
-      Technology makes work easier, but staying competitive may become
-      harder.
-    </strong>
-  </blockquote>
+<p>
+A new model can change how an entire category of software is built.
+</p>
 
-  <h2>The temptation to learn everything</h2>
+<p>
+So engineers are told:
+</p>
 
-  <p>
-    This creates another problem.
-  </p>
+<blockquote>
+"Keep learning."
+</blockquote>
 
-  <p>
-    AI is moving so quickly that there always seems to be something new
-    to learn.
-  </p>
-
-  <p>
-    A new model.
-  </p>
-
-  <p>
-    A new agent framework.
-  </p>
-
-  <p>
-    A new protocol.
-  </p>
-
-  <p>
-    A new cloud service.
-  </p>
+<p>
+And they do.
+</p>
 
-  <p>
-    A new development tool.
-  </p>
+<p>
+But there is a point where we need to ask a different question.
+</p>
 
-  <p>
-    A new benchmark.
-  </p>
+<blockquote>
+How much learning is actually necessary, and how much of it is simply keeping up with the speed of the tools?
+</blockquote>
 
-  <p>
-    A new technique that everyone suddenly says is essential.
-  </p>
+<h2>The pressure on the individual</h2>
 
-  <p>
-    Trying to become an expert in all of them is impossible.
-  </p>
+<p>
+Imagine being an engineer working a full day.
+</p>
 
-  <h2>What should we actually learn?</h2>
+<p>
+You have meetings.
+</p>
 
-  <p>
-    Perhaps the answer is not to chase every new technology.
-  </p>
-
-  <p>
-    It is to build a strong foundation and learn how to adapt.
-  </p>
-
-  <p>
-    Programming fundamentals matter.
-  </p>
-
-  <p>
-    Data structures matter.
-  </p>
-
-  <p>
-    Databases matter.
-  </p>
-
-  <p>
-    Networking matters.
-  </p>
+<p>
+You have production issues.
+</p>
 
-  <p>
-    Distributed systems matter.
-  </p>
-
-  <p>
-    Security matters.
-  </p>
-
-  <p>
-    System design matters.
-  </p>
-
-  <p>
-    Understanding how businesses actually work matters.
-  </p>
-
-  <p>
-    These concepts don't become useless because a new AI model appears.
-  </p>
-
-  <h2>Depth over everything</h2>
-
-  <p>
-    I don't think the goal should be becoming 10/10 at everything.
-  </p>
-
-  <p>
-    That isn't realistic.
-  </p>
-
-  <p>
-    A better strategy may be to develop deep expertise in one or two
-    areas while building enough breadth to understand the rest of the
-    system.
-  </p>
-
-  <p>
-    An engineer might become exceptionally strong at backend systems
-    while understanding cloud, databases, AI and product requirements
-    well enough to work across them.
-  </p>
-
-  <p>
-    Another engineer might specialise deeply in security while using AI
-    to handle much of the implementation work.
-  </p>
-
-  <p>
-    The point isn't to know everything.
-  </p>
-
-  <p>
-    It is to know what matters.
-  </p>
-
-  <h2>The treadmill has a limit</h2>
-
-  <p>
-    There is also a human question here.
-  </p>
-
-  <p>
-    People have limited time and energy.
-  </p>
-
-  <p>
-    We cannot spend every evening learning just to remain employable.
-  </p>
-
-  <p>
-    At some point, the question becomes:
-  </p>
-
-  <blockquote>
-    <strong>
-      How much of our lives should be spent preparing for the next
-      technological change?
-    </strong>
-  </blockquote>
-
-  <p>
-    There is no simple answer.
-  </p>
-
-  <p>
-    But I think there is an important distinction between continuous
-    learning and continuous panic.
-  </p>
-
-  <p>
-    Learning should increase our capability.
-  </p>
-
-  <p>
-    It shouldn't become an endless attempt to outrun uncertainty.
-  </p>
-
-  <h2>The durable advantage</h2>
-
-  <p>
-    The most durable skill may therefore be the ability to learn,
-    reason and adapt rather than memorising a particular technology.
-  </p>
-
-  <p>
-    Tools will change.
-  </p>
-
-  <p>
-    Models will change.
-  </p>
-
-  <p>
-    Frameworks will change.
-  </p>
-
-  <p>
-    But the ability to understand a difficult problem and learn what is
-    necessary to solve it remains valuable.
-  </p>
-
-  <p>
-    Maybe that is what we should optimise for.
-  </p>
-
-  <p>
-    Not knowing everything.
-  </p>
-
-  <p>
-    Not chasing every trend.
-  </p>
-
-  <p>
-    But becoming the kind of person who can enter an unfamiliar problem,
-    understand it, use whatever tools are available, and produce a
-    reliable outcome.
-  </p>
-
-  <p>
-    And for people entering the workforce during this transition,
-    that may be one of the most important skills of all.
-  </p>
-
-  <p class="back">
-    <a href="../">← Back to The AI Transition</a>
-  </p>
+<p>
+You have deadlines.
+</p>
+
+<p>
+You have client discussions.
+</p>
+
+<p>
+You have bugs to fix.
+</p>
+
+<p>
+You have a personal life.
+</p>
+
+<p>
+And then, after all of that, you are told that you also need to spend several hours every day learning the newest AI tools because otherwise someone else will become more productive than you.
+</p>
+
+<p>
+The cycle becomes:
+</p>
+
+<blockquote>
+Work → Learn → Work → Learn → Repeat.
+</blockquote>
+
+<p>
+And if AI continues accelerating, the treadmill may simply get faster.
+</p>
+
+<h2>But there is another side of this</h2>
+
+<p>
+There is an important question for management here.
+</p>
+
+<p>
+As AI becomes more capable, companies will naturally want to use it to increase productivity.
+</p>
+
+<p>
+That makes sense.
+</p>
+
+<p>
+But the way that productivity is interpreted matters enormously.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>
+Imagine a manager saying:
+</strong>
+</p>
+
+<p>
+<strong>
+"We have Claude. We have Copilot. We have AI agents. Why do we need another developer?"
+</strong>
+</p>
+
+</div>
+
+<p>
+That sounds logical at first.
+</p>
+
+<p>
+But it can reflect a misunderstanding of what AI productivity actually means.
+</p>
+
+<p>
+If AI helps a developer write code twice as fast, that does not necessarily mean the entire project can now be completed twice as fast.
+</p>
+
+<p>
+The developer may still be waiting for requirements.
+</p>
+
+<p>
+The client may change the requirement.
+</p>
+
+<p>
+Another team may control a dependency.
+</p>
+
+<p>
+The database may need to be changed.
+</p>
+
+<p>
+Security may need to review the implementation.
+</p>
+
+<p>
+The deployment environment may have problems.
+</p>
+
+<p>
+The AI-generated code may need verification.
+</p>
+
+<p>
+Integration may take longer than implementation.
+</p>
+
+<p>
+And someone still has to understand whether the thing being built is actually the right thing to build.
+</p>
+
+<h2>What should management actually ask?</h2>
+
+<p>
+I think the management question should change.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>
+Instead of asking:
+</strong>
+</p>
+
+<p>
+<strong>
+"Why do we need another developer when AI can do the work?"
+</strong>
+</p>
+
+<p>
+<strong>
+The better question is:
+</strong>
+</p>
+
+<p>
+<strong>
+"If AI makes this team more productive, what more should this team be able to accomplish?"
+</strong>
+</p>
+
+</div>
+
+<p>
+That is a very different mindset.
+</p>
+
+<p>
+If a team becomes more productive, perhaps the company should build more.
+</p>
+
+<p>
+Perhaps it should take on more customers.
+</p>
+
+<p>
+Perhaps it should improve existing products.
+</p>
+
+<p>
+Perhaps it should experiment with ideas that previously weren't economically viable.
+</p>
+
+<p>
+Perhaps the same team can now solve problems that previously required a much larger team.
+</p>
+
+<p>
+AI should create additional capacity.
+</p>
+
+<p>
+The question is what the organisation chooses to do with that capacity.
+</p>
+
+<h2>Productivity is not the same as headcount reduction</h2>
+
+<p>
+This distinction matters because productivity and employment are not the same metric.
+</p>
+
+<p>
+If one engineer with AI can accomplish the work that previously required two engineers, that is a productivity improvement.
+</p>
+
+<p>
+But if the company simply removes the second engineer and expects the first engineer to continue doing the same amount of work, the organisation may have captured the productivity benefit without actually creating anything new.
+</p>
+
+<p>
+The result is fewer people doing the same work.
+</p>
+
+<p>
+That may improve short-term efficiency.
+</p>
+
+<p>
+But it also raises a much bigger question about where the additional human capacity goes.
+</p>
+
+<p>
+If AI genuinely makes people dramatically more productive, perhaps the goal should be to expand what those people can accomplish rather than simply reducing the number of people required.
+</p>
+
+<h2>What should managers understand?</h2>
+
+<p>
+Managers operating in an AI-heavy environment will need to understand more than just which AI tools are available.
+</p>
+
+<p>
+They need to understand what AI can realistically accelerate.
+</p>
+
+<p>
+They need to understand what it cannot accelerate.
+</p>
+
+<p>
+They need to distinguish implementation time from total delivery time.
+</p>
+
+<p>
+They need to account for requirements, dependencies, validation, security, integration and production risk.
+</p>
+
+<p>
+And most importantly, they need to understand that giving someone an AI tool does not automatically give them unlimited capacity.
+</p>
+
+<p>
+A developer using AI still needs time to think.
+</p>
+
+<p>
+They still need to review the output.
+</p>
+
+<p>
+They still need to understand the system.
+</p>
+
+<p>
+They still need to make decisions.
+</p>
+
+<p>
+And they still need to deal with everything around the code.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>
+The right management question is not:
+</strong>
+</p>
+
+<p>
+<strong>
+"How quickly can AI make this person finish the task?"
+</strong>
+</p>
+
+<p>
+<strong>
+It is:
+</strong>
+</p>
+
+<p>
+<strong>
+"What becomes possible for this team now that AI has removed some of the execution burden?"
+</strong>
+</p>
+
+</div>
+
+<h2>The responsibility of engineers</h2>
+
+<p>
+This does not mean engineers can stop learning.
+</p>
+
+<p>
+Quite the opposite.
+</p>
+
+<p>
+Engineers will need to understand AI deeply enough to use it effectively.
+</p>
+
+<p>
+But I don't think the answer is becoming an expert in every new tool.
+</p>
+
+<p>
+The durable advantage is understanding fundamentals and developing the ability to learn quickly when the tools change.
+</p>
+
+<p>
+You don't need to know every framework.
+</p>
+
+<p>
+You need to understand how software works.
+</p>
+
+<p>
+You don't need to memorise every AI platform.
+</p>
+
+<p>
+You need to understand how to evaluate and use AI systems.
+</p>
+
+<p>
+You don't need to chase every new trend.
+</p>
+
+<p>
+You need to recognise which changes actually matter.
+</p>
+
+<h2>The treadmill should not become the destination</h2>
+
+<p>
+Continuous learning is valuable.
+</p>
+
+<p>
+But learning for the sake of keeping up is not the same as building durable capability.
+</p>
+
+<p>
+The goal should not be to become 10/10 at everything.
+</p>
+
+<p>
+It may be better to become deeply capable in a few areas while having enough breadth to understand the rest and direct AI effectively.
+</p>
+
+<p>
+The engineer of the future may need fewer hours of manual execution and more hours of understanding, deciding, reviewing and directing.
+</p>
+
+<p>
+That is a healthier way to think about the transition.
+</p>
+
+<p>
+AI should not turn every engineer into someone permanently afraid of becoming obsolete.
+</p>
+
+<p>
+It should give engineers more leverage.
+</p>
+
+<p>
+And organisations should think carefully about how that leverage is used.
+</p>
+
+<p>
+Because if the only definition of productivity is "how many people can we eliminate?", we may be measuring only one side of what AI makes possible.
+</p>
+
+<p>
+The more interesting question is:
+</p>
+
+<blockquote>
+What could we build if humans spent less time executing and more time thinking?
+</blockquote>
+
+<p>
+That question leads to another difficult issue.
+</p>
+
+<p>
+Because if AI really does make a small team capable of doing the work of a much larger team, what happens to everyone who is no longer needed?
+</p>
+
+<p>
+That is the question we need to confront next.
+</p>
+
+<div class="navigation">
+
+    <a href="/the-ai-transition/chapters/06-the-india-question.html">
+        ← The India Question
+    </a>
+
+    <a href="/the-ai-transition/chapters/08-im-25.html">
+        I'm 25 →
+    </a>
+
+</div>
+
+<div class="back">
+    <a href="/the-ai-transition/">
+        ← Back to The AI Transition
+    </a>
+</div>
+
+<div class="footer">
+    The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
+</div>
+
+</div>
 
 </body>
 </html>
