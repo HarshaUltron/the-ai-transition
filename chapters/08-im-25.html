@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +38,7 @@ h1 {
 
 h2 {
     font-size: 26px;
+    color: #263f5b;
     margin-top: 55px;
 }
 
@@ -48,20 +48,37 @@ p {
 }
 
 blockquote {
-    border-left: 3px solid #222;
+    border-left: 3px solid #263f5b;
     margin: 40px 0;
     padding: 5px 25px;
     font-size: 21px;
     font-style: italic;
 }
 
-.back {
-    display: inline-block;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 60px;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+}
+
+.navigation a {
     text-decoration: none;
-    color: #222;
+    color: #263f5b;
+    font-size: 14px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.back a {
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
 }
 
 .footer {
@@ -295,10 +312,26 @@ It is our careers.
 And that is why I think we should start asking these questions now.
 </p>
 
-<a class="back" href="/the-ai-transition/">← Back to The AI Transition</a>
+<div class="navigation">
+
+    <a href="/the-ai-transition/chapters/07-the-learning-treadmill.html">
+        ← The Learning Treadmill
+    </a>
+
+    <a href="/the-ai-transition/chapters/09-we-shouldnt-sleep.html">
+        We Shouldn't Sleep →
+    </a>
+
+</div>
+
+<div class="back">
+    <a href="/the-ai-transition/">
+        ← Back to The AI Transition
+    </a>
+</div>
 
 <div class="footer">
-The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
+    The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
 </div>
 
 </div>
