@@ -102,6 +102,43 @@ blockquote {
     margin-top: 25px;
 }
 
+
+/* FEEDBACK */
+
+.feedback {
+    margin-top: 80px;
+    padding: 35px 30px;
+    background: #eeece6;
+    border-left: 4px solid #263f5b;
+}
+
+.feedback h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.feedback p {
+    font-size: 17px;
+}
+
+.feedback-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #263f5b;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.feedback-button:hover {
+    opacity: 0.85;
+}
+
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -135,6 +172,56 @@ blockquote {
     font-family: Arial, sans-serif;
     font-size: 13px;
     color: #888;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 45px 20px 70px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    blockquote {
+        font-size: 19px;
+        padding-left: 18px;
+    }
+
+    .movie-section {
+        padding: 30px 20px;
+    }
+
+    .movie-quote {
+        font-size: 21px;
+    }
+
+    .movie-response {
+        font-size: 23px;
+    }
+
+    .feedback {
+        padding: 28px 22px;
+    }
+
+    .feedback-button {
+        width: 100%;
+        text-align: center;
+        padding: 13px 0;
+    }
+
 }
 </style>
 </head>
@@ -457,6 +544,9 @@ But it is being built right now.
 We shouldn't wait until the change is undeniable before we start understanding its consequences.
 </p>
 
+
+<!-- I, ROBOT -->
+
 <div class="movie-section">
 
 <h2>One Last Question</h2>
@@ -467,11 +557,11 @@ There is a scene from <em>I, Robot</em> that captures a similar question beautif
 
 <div class="movie-quote">
 "Can a robot write a symphony?<br>
-Can a robot turn a canvas into a beautiful masterpiece?"
+Can a robot turn a canvas into a beautiful painting?"
 </div>
 
 <div class="movie-response">
-"Can you?"
+"Will you?"
 </div>
 
 <p class="movie-caption">
@@ -479,6 +569,47 @@ I, Robot (2004)
 </p>
 
 </div>
+
+
+<!-- READER FEEDBACK -->
+
+<div class="feedback">
+
+<h2>What do you think?</h2>
+
+<p>
+You've reached the end.
+</p>
+
+<p>
+This essay is one engineer's attempt to think through what AI could
+mean for software, careers and the economy.
+</p>
+
+<p>
+I don't expect everyone to agree with it.
+In fact, disagreement is probably more interesting.
+</p>
+
+<p>
+<strong>
+I'd genuinely like to know what you think.
+</strong>
+</p>
+
+<a
+    class="feedback-button"
+    href="https://forms.gle/dm514QWWyw8f7K6R7"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Share Your Thoughts →
+</a>
+
+</div>
+
+
+<!-- NAVIGATION -->
 
 <div class="navigation">
 
@@ -491,13 +622,18 @@ I, Robot (2004)
 </div>
 
 <div class="back">
+
     <a href="/the-ai-transition/">
         ← Back to The AI Transition
     </a>
+
 </div>
 
+
 <div class="footer">
+
     The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
+
 </div>
 
 </div>
