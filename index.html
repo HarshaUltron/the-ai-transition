@@ -3,160 +3,591 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The AI Transition</title>
-  <meta name="description" content="What happens when machines can do the work humans built their careers around?">
+
+  <meta
+    name="description"
+    content="What happens when machines can do the work humans built their careers around?"
+  >
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Georgia, "Times New Roman", serif;
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 60px 25px;
+      padding: 50px 25px 70px;
       line-height: 1.8;
       color: #222;
       background: #faf9f6;
     }
 
-    h1 {
-      font-size: 3.5rem;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
+    /* HERO */
 
-    h2 {
-      margin-top: 60px;
+    .hero {
+      padding: 55px 0 70px;
       border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
     }
 
-    h3 {
-      margin-bottom: 5px;
+    .eyebrow {
+      color: #263f5b;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 4.2rem;
+      line-height: 1.05;
+      letter-spacing: 2px;
+      margin: 0 0 22px;
+      color: #1f1f1f;
     }
 
     .subtitle {
-      font-size: 1.3rem;
+      font-size: 1.45rem;
+      line-height: 1.5;
       color: #666;
-      margin-bottom: 50px;
+      max-width: 700px;
+      margin: 0 0 25px;
+    }
+
+    .author-line {
+      font-size: 1rem;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 35px;
+    }
+
+    .start-button {
+      display: inline-block;
+      background: #263f5b;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 3px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+    }
+
+    .start-button:hover {
+      opacity: 0.85;
+    }
+
+    .meta {
+      margin-top: 30px;
+      color: #888;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+
+
+    /* INTRODUCTION */
+
+    .intro {
+      padding: 65px 0 45px;
+      max-width: 760px;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      color: #263f5b;
+      margin: 0 0 28px;
+      line-height: 1.3;
+    }
+
+    .intro p {
+      margin: 0 0 20px;
+    }
+
+    blockquote {
+      border-left: 3px solid #263f5b;
+      padding-left: 22px;
+      margin: 35px 0;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+
+    /* CHAPTERS */
+
+    .chapters-section {
+      padding-top: 25px;
+    }
+
+    .chapters-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      margin-bottom: 10px;
+    }
+
+    .chapters-header h2 {
+      margin: 0;
+    }
+
+    .chapter-count {
+      color: #888;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .chapter {
-      margin: 30px 0;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 25px;
+      padding: 28px 0;
+      border-bottom: 1px solid #e2e0dc;
     }
 
-    a {
-      color: #333;
+    .chapter-number {
+      color: #263f5b;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-top: 5px;
     }
+
+    .chapter-content h3 {
+      font-size: 1.45rem;
+      line-height: 1.3;
+      margin: 0 0 8px;
+      color: #222;
+    }
+
+    .chapter-content p {
+      margin: 0 0 13px;
+      color: #666;
+      max-width: 700px;
+    }
+
+    .chapter-content a {
+      color: #263f5b;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .chapter-content a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* FOOTER */
 
     .footer {
       margin-top: 80px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
       color: #777;
       font-style: italic;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .footer-small {
+      margin-top: 25px;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #aaa;
+      font-style: normal;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 30px 20px 50px;
+      }
+
+      .hero {
+        padding: 35px 0 50px;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+
+      .intro {
+        padding: 45px 0 35px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .chapters-header {
+        align-items: center;
+      }
+
+      .chapter {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+        padding: 24px 0;
+      }
+
+      .chapter-content h3 {
+        font-size: 1.25rem;
+      }
+
+      .chapter-content p {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
 
+
 <body>
 
-  <h1>THE AI TRANSITION</h1>
+  <!-- HERO -->
 
-  <p class="subtitle">
-    What happens when machines can do the work humans built their careers around?
-  </p>
+  <section class="hero">
 
-  <p><em>An engineer's thoughts on AI, software, careers and the economy.</em></p>
+    <div class="eyebrow">
+      An independent essay
+    </div>
 
-  <hr>
+    <h1>THE AI<br>TRANSITION</h1>
 
-  <h2>A note before you begin</h2>
+    <p class="subtitle">
+      What happens when machines can do the work humans built their careers around?
+    </p>
 
-  <p>AI is no longer just a tool that helps us write code.</p>
+    <p class="author-line">
+      An engineer's thoughts on AI, software, careers and the economy.
+    </p>
 
-  <p>It can write the code.</p>
-  <p>It can test the code.</p>
-  <p>It can explain the code.</p>
+    <a
+      class="start-button"
+      href="/the-ai-transition/chapters/01-the-question.html"
+    >
+      Start Reading →
+    </a>
 
-  <p>
-    It can suggest architectures, debug failures, deploy systems,
-    and increasingly perform entire chains of technical work.
-  </p>
+    <div class="meta">
+      9 chapters · AI · Software · Careers · Economy
+    </div>
 
-  <p>So a question is becoming harder to ignore:</p>
+  </section>
 
-  <blockquote>
-    <strong>If machines can do the work, what happens to the people who used to do it?</strong>
-  </blockquote>
 
-  <p>
-    This is not a prediction that AI will replace everyone.
-  </p>
+  <!-- INTRODUCTION -->
 
-  <p>
-    It is an attempt to think seriously about what happens if AI keeps becoming
-    more capable — to software engineers, to careers, to companies, and to
-    economies built around human knowledge work.
-  </p>
+  <section class="intro">
 
-  <h2>Chapters</h2>
+    <h2>A note before you begin</h2>
 
-  <div class="chapter">
-    <h3>01 — The Question</h3>
-    <p>Where this thought started, and why AI made me question what I've spent years learning.</p>
-    <a href="chapters/01-the-question.html">Read Chapter 1 →</a>
-  </div>
+    <p>
+      AI is no longer just a tool that helps us write code.
+    </p>
 
-  <div class="chapter">
-    <h3>02 — The Software Team</h3>
-    <p>What happens when AI enters the roles of developers, QA engineers, DevOps engineers, architects and managers.</p>
-    <a href="chapters/02-the-software-team.html">Read Chapter 2 →</a>
-  </div>
+    <p>
+      It can write the code.
+    </p>
 
-  <div class="chapter">
-    <h3>03 — But AI Can Do That Too</h3>
-    <p>The strongest counterargument: if AI can reason, plan and execute, why do we still need humans?</p>
-    <a href="chapters/03-but-ai-can-do-that-too.html">Read Chapter 3 →</a>
-  </div>
+    <p>
+      It can test the code.
+    </p>
 
-  <div class="chapter">
-    <h3>04 — The New Engineer</h3>
-    <p>If writing code becomes less valuable, what should engineers become exceptionally good at?</p>
-    <a href="/the-ai-transition/chapters/04-the-new-engineer.html">Read Chapter 4 →</a>
-  </div>
+    <p>
+      It can explain the code.
+    </p>
 
-  <div class="chapter">
-    <h3>05 — The 80/20 Question</h3>
-    <p>What happens if a small number of AI-assisted engineers can produce what much larger teams used to produce?</p>
-    <a href="/the-ai-transition/chapters/05-the-80-20-question.html">Read Chapter 5 →</a>
-  </div>
+    <p>
+      It can suggest architectures, debug failures, deploy systems,
+      and increasingly perform entire chains of technical work.
+    </p>
 
-  <div class="chapter">
-    <h3>06 — The India Question</h3>
-    <p>Why the AI transition could matter especially deeply to India's technology industry and economy.</p>
-    <a href="/the-ai-transition/chapters/06-the-india-question.html">Read Chapter 6 →</a>
-  </div>
+    <p>
+      So a question is becoming harder to ignore:
+    </p>
 
-  <div class="chapter">
-    <h3>07 — The Learning Treadmill</h3>
-    <p>When staying employable means constantly learning, where does the treadmill end?</p>
-    <a href="/the-ai-transition/chapters/07-the-learning-treadmill.html">Read Chapter 7 →</a>
-  </div>
+    <blockquote>
+      <strong>
+        If machines can do the work, what happens to the people who used to do it?
+      </strong>
+    </blockquote>
 
-  <div class="chapter">
-    <h3>08 — I'm 25</h3>
-    <p>A personal perspective on entering adulthood and a career during one of the biggest technological transitions in history.</p>
-    <a href="/the-ai-transition/chapters/08-im-25.html">Read Chapter 8 →</a>
-  </div>
+    <p>
+      This is not a prediction that AI will replace everyone.
+    </p>
 
-  <div class="chapter">
-    <h3>09 — We Shouldn't Sleep</h3>
-    <p>The conclusion: neither panic nor blind optimism is enough. We need to start thinking about the transition before it becomes unavoidable.</p>
-    <a href="/the-ai-transition/chapters/09-we-shouldnt-sleep.html">Read Chapter 9 →</a>
-  </div>
+    <p>
+      It is an attempt to think seriously about what happens if AI keeps becoming
+      more capable — to software engineers, to careers, to companies, and to
+      economies built around human knowledge work.
+    </p>
 
-  <hr>
+  </section>
 
-  <p class="footer">
+
+  <!-- CHAPTERS -->
+
+  <section class="chapters-section">
+
+    <div class="chapters-header">
+      <h2>Chapters</h2>
+
+      <span class="chapter-count">
+        01 — 09
+      </span>
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        01
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>The Question</h3>
+
+        <p>
+          Where this thought started, and why AI made me question what
+          I've spent years learning.
+        </p>
+
+        <a href="/the-ai-transition/chapters/01-the-question.html">
+          Read Chapter 1 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        02
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>The Software Team</h3>
+
+        <p>
+          What happens when AI enters the roles of developers, QA engineers,
+          DevOps engineers, architects and managers.
+        </p>
+
+        <a href="/the-ai-transition/chapters/02-the-software-team.html">
+          Read Chapter 2 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        03
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>But AI Can Do That Too</h3>
+
+        <p>
+          The strongest counterargument: if AI can reason, plan and execute,
+          why do we still need humans?
+        </p>
+
+        <a href="/the-ai-transition/chapters/03-but-ai-can-do-that-too.html">
+          Read Chapter 3 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        04
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>The New Engineer</h3>
+
+        <p>
+          If writing code becomes less valuable, what should engineers
+          become exceptionally good at?
+        </p>
+
+        <a href="/the-ai-transition/chapters/04-the-new-engineer.html">
+          Read Chapter 4 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        05
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>The 80/20 Question</h3>
+
+        <p>
+          What happens if a small number of AI-assisted engineers can produce
+          what much larger teams used to produce?
+        </p>
+
+        <a href="/the-ai-transition/chapters/05-the-80-20-question.html">
+          Read Chapter 5 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        06
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>The India Question</h3>
+
+        <p>
+          Why the AI transition could matter especially deeply to India's
+          technology industry and economy.
+        </p>
+
+        <a href="/the-ai-transition/chapters/06-the-india-question.html">
+          Read Chapter 6 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        07
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>The Learning Treadmill</h3>
+
+        <p>
+          When staying employable means constantly learning, where does
+          the treadmill end?
+        </p>
+
+        <a href="/the-ai-transition/chapters/07-the-learning-treadmill.html">
+          Read Chapter 7 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        08
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>I'm 25</h3>
+
+        <p>
+          A personal perspective on entering adulthood and a career during
+          one of the biggest technological transitions in history.
+        </p>
+
+        <a href="/the-ai-transition/chapters/08-im-25.html">
+          Read Chapter 8 →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="chapter">
+
+      <div class="chapter-number">
+        09
+      </div>
+
+      <div class="chapter-content">
+
+        <h3>We Shouldn't Sleep</h3>
+
+        <p>
+          The conclusion: neither panic nor blind optimism is enough.
+          We need to start thinking about the transition before it becomes
+          unavoidable.
+        </p>
+
+        <a href="/the-ai-transition/chapters/09-we-shouldnt-sleep.html">
+          Read Chapter 9 →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+
     The future isn't predetermined.<br>
     But that doesn't mean we shouldn't prepare for it.
-  </p>
+
+    <div class="footer-small">
+      THE AI TRANSITION
+    </div>
+
+  </div>
 
 </body>
 </html>
