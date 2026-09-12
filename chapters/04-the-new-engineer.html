@@ -1,314 +1,512 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The New Engineer — The AI Transition</title>
-  <style>
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 25px;
-      line-height: 1.8;
-      color: #222;
-      background: #faf9f6;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    h2 {
-      margin-top: 50px;
-    }
-    a {
-      color: #333;
-    }
-    .chapter {
-      color: #777;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-    }
-    blockquote {
-      border-left: 3px solid #999;
-      padding-left: 20px;
-      margin: 30px 0;
-      font-size: 1.15rem;
-      font-style: italic;
-    }
-    .back {
-      margin-top: 60px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 04 — The New Engineer</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f7f5f0;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 70px 25px 100px;
+}
+
+.chapter {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 0 0 45px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #263f5b;
+    margin-top: 55px;
+}
+
+.highlight-heading {
+    font-size: 34px;
+    line-height: 1.2;
+    color: #263f5b;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 18px;
+    margin: 22px 0;
+}
+
+blockquote {
+    border-left: 3px solid #263f5b;
+    margin: 40px 0;
+    padding: 5px 25px;
+    font-size: 21px;
+    font-style: italic;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #263f5b;
+    font-size: 14px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.back a {
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+}
+
+.footer {
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+}
+</style>
 </head>
 
 <body>
 
-  <p class="chapter">Chapter 04</p>
+<div class="container">
 
-  <h1>The New Engineer</h1>
+<div class="chapter">Chapter 04</div>
 
-  <p>
-    If AI can write more of the code, test more of the software and
-    automate more of the execution, then what exactly should an engineer
-    become?
-  </p>
+<h1>The New Engineer</h1>
 
-  <p>
-    I don't think the answer is to stop learning how to code.
-  </p>
+<p>
+If AI increasingly handles more of the execution, then the engineer of the future cannot simply be an engineer who writes code faster.
+</p>
 
-  <p>
-    In fact, I think the opposite may be true.
-  </p>
+<p>
+The role has to become broader.
+</p>
 
-  <p>
-    The fundamentals may become more important precisely because AI
-    makes implementation easier.
-  </p>
+<p>
+Not necessarily because coding becomes unimportant.
+</p>
 
-  <h2>Knowing code is still important</h2>
+<p>
+But because the value of manually producing every line of code may decrease as machines become better at producing it.
+</p>
 
-  <p>
-    If an AI generates a thousand lines of Python, someone still needs
-    to understand whether those thousand lines make sense.
-  </p>
+<p>
+The engineer may have to move from being primarily an implementer to becoming someone who understands the entire problem and can use AI to solve it.
+</p>
 
-  <p>
-    If an AI proposes a database design, someone needs to understand
-    indexing, transactions, isolation, consistency and failure modes.
-  </p>
+<h2>What still matters?</h2>
 
-  <p>
-    If an AI proposes a distributed architecture, someone needs to
-    understand networking, concurrency, caching, queues and reliability.
-  </p>
+<p>
+The fundamentals.
+</p>
 
-  <p>
-    You cannot reliably evaluate something you fundamentally don't
-    understand.
-  </p>
+<p>
+Programming.
+</p>
 
-  <p>
-    AI may reduce the amount of code an engineer writes manually.
-    It does not necessarily reduce the amount of engineering knowledge
-    required to judge that code.
-  </p>
+<p>
+Data structures and algorithms.
+</p>
 
-  <h2>From writing to directing</h2>
+<p>
+Databases.
+</p>
 
-  <p>
-    The engineer's workflow may increasingly look something like this:
-  </p>
+<p>
+Networking.
+</p>
 
-  <p>
-    Understand the problem.
-  </p>
+<p>
+Operating systems.
+</p>
 
-  <p>
-    Break the problem into smaller pieces.
-  </p>
+<p>
+Distributed systems.
+</p>
 
-  <p>
-    Give the AI the right context.
-  </p>
+<p>
+APIs.
+</p>
 
-  <p>
-    Let it execute.
-  </p>
+<p>
+Security.
+</p>
 
-  <p>
-    Review the result.
-  </p>
+<p>
+Cloud infrastructure.
+</p>
 
-  <p>
-    Test it.
-  </p>
+<p>
+System design.
+</p>
 
-  <p>
-    Challenge its assumptions.
-  </p>
+<p>
+These things may actually become more important, not less.
+</p>
 
-  <p>
-    Correct it.
-  </p>
+<p>
+Because if AI writes the implementation for you, you still need to understand whether the implementation makes sense.
+</p>
 
-  <p>
-    And finally, own the outcome.
-  </p>
+<p>
+You need to know when something is wrong.
+</p>
 
-  <p>
-    That is a different skill from simply typing code.
-  </p>
+<p>
+You need to understand the trade-offs.
+</p>
 
-  <h2>But this requires breadth</h2>
+<p>
+You need to be able to debug what the AI produced.
+</p>
 
-  <p>
-    The modern engineer may need to understand more areas than before.
-  </p>
+<p>
+And you need enough technical depth to know when you should trust the answer and when you shouldn't.
+</p>
 
-  <p>
-    Backend development.
-  </p>
+<h2>AI becomes part of the engineering workflow</h2>
 
-  <p>
-    Databases.
-  </p>
+<p>
+The engineer will also need to become extremely comfortable working with AI.
+</p>
 
-  <p>
-    Distributed systems.
-  </p>
+<p>
+Not just asking a chatbot to write a function.
+</p>
 
-  <p>
-    Cloud infrastructure.
-  </p>
+<p>
+The workflow could involve multiple AI systems and agents working together.
+</p>
 
-  <p>
-    Security.
-  </p>
+<p>
+One agent might analyse requirements.
+</p>
 
-  <p>
-    AI systems.
-  </p>
+<p>
+Another might explore the existing codebase.
+</p>
 
-  <p>
-    System design.
-  </p>
+<p>
+Another might implement the change.
+</p>
 
-  <p>
-    And increasingly, the business domain itself.
-  </p>
+<p>
+Another might generate and execute tests.
+</p>
 
-  <p>
-    This doesn't mean becoming an expert in everything.
-  </p>
+<p>
+Another might investigate failures.
+</p>
 
-  <p>
-    It means developing enough understanding across the system to know
-    what matters and where the risks are.
-  </p>
+<p>
+The engineer becomes the person coordinating and evaluating this process.
+</p>
 
-  <h2>Depth still matters</h2>
+<p>
+That requires a different skill set.
+</p>
 
-  <p>
-    There is also a danger in reacting to AI by trying to learn every
-    new technology that appears.
-  </p>
+<p>
+You need to know how to provide context.
+</p>
 
-  <p>
-    Every few months there is another framework, another model, another
-    agent platform, another protocol and another tool.
-  </p>
+<p>
+How to break down problems.
+</p>
 
-  <p>
-    Chasing all of them can become exhausting.
-  </p>
+<p>
+How to verify results.
+</p>
 
-  <p>
-    Durable knowledge is different.
-  </p>
+<p>
+How to recognise hallucinations and incorrect assumptions.
+</p>
 
-  <p>
-    Algorithms don't disappear because a new framework appears.
-  </p>
+<p>
+How to give precise instructions.
+</p>
 
-  <p>
-    Databases don't stop having consistency and concurrency problems.
-  </p>
+<p>
+And how to decide when the AI should stop and a human should take over.
+</p>
 
-  <p>
-    Distributed systems don't stop failing in interesting ways.
-  </p>
+<h2 class="highlight-heading">From Writing to Directing</h2>
 
-  <p>
-    Networks still have latency.
-  </p>
+<p>
+This is perhaps the biggest shift I see coming.
+</p>
 
-  <p>
-    Systems still have bottlenecks.
-  </p>
+<p>
+For years, a large part of software engineering has been about writing.
+</p>
 
-  <p>
-    Businesses still have constraints.
-  </p>
+<p>
+Writing functions.
+</p>
 
-  <p>
-    Those fundamentals survive technological cycles.
-  </p>
+<p>
+Writing APIs.
+</p>
 
-  <h2>The engineer as an AI multiplier</h2>
+<p>
+Writing queries.
+</p>
 
-  <p>
-    Perhaps the most useful way to think about the future engineer is
-    not as someone competing with AI, but as someone who multiplies their
-    own capabilities through it.
-  </p>
+<p>
+Writing tests.
+</p>
 
-  <p>
-    A strong engineer with AI can potentially investigate problems faster,
-    explore more alternatives, prototype more quickly and automate
-    repetitive work.
-  </p>
+<p>
+Writing infrastructure code.
+</p>
 
-  <p>
-    But the quality of that multiplication depends heavily on the
-    engineer.
-  </p>
+<p>
+Writing documentation.
+</p>
 
-  <p>
-    A person who doesn't understand the problem can use AI to produce
-    more wrong answers faster.
-  </p>
+<p>
+But if machines become extremely good at producing those things, the engineer's role gradually moves upward.
+</p>
 
-  <p>
-    A person who understands the problem can use the same system to
-    move dramatically faster toward a good solution.
-  </p>
+<blockquote>
+The engineer moves from writing the work to directing the work.
+</blockquote>
 
-  <blockquote>
-    AI may increase the value of engineering judgment precisely because
-    it makes execution cheaper.
-  </blockquote>
+<p>
+Instead of:
+</p>
 
-  <h2>The uncomfortable part</h2>
+<blockquote>
+"Give me the requirements. I'll write the code."
+</blockquote>
 
-  <p>
-    This transition may still reduce the number of engineers companies
-    need for certain kinds of work.
-  </p>
+<p>
+The emerging model could be:
+</p>
 
-  <p>
-    Becoming a better engineer does not guarantee that the market will
-    need exactly the same number of engineers.
-  </p>
+<blockquote>
+"Give me the problem. I'll determine what needs to be built, direct AI to build it, evaluate the result, and own the outcome."
+</blockquote>
 
-  <p>
-    That is an important distinction.
-  </p>
+<p>
+That is a very different kind of engineering.
+</p>
 
-  <p>
-    Individual capability and total employment are not the same thing.
-  </p>
+<p>
+The engineer is no longer measured only by how much code they personally produce.
+</p>
 
-  <p>
-    If one engineer can accomplish the work that previously required
-    three, that is excellent productivity for the engineer and the
-    company.
-  </p>
+<p>
+They may be measured by how effectively they can turn a real-world problem into a correct, reliable and useful system.
+</p>
 
-  <p>
-    But it creates a difficult question for the other two people.
-  </p>
+<p>
+And that requires much more than coding.
+</p>
 
-  <p>
-    And that question leads us to the next chapter.
-  </p>
+<h2>Understanding the business becomes technical skill</h2>
 
-  <p class="back">
-    <a href="../">← Back to The AI Transition</a>
-  </p>
+<p>
+Imagine two engineers using exactly the same AI system.
+</p>
+
+<p>
+Both have access to the same models.
+</p>
+
+<p>
+Both can generate code at roughly the same speed.
+</p>
+
+<p>
+Both can ask the AI to design an architecture.
+</p>
+
+<p>
+Yet one engineer may produce a much better solution.
+</p>
+
+<p>
+Why?
+</p>
+
+<p>
+Because they understand the problem better.
+</p>
+
+<p>
+They understand why the customer needs the system.
+</p>
+
+<p>
+They understand which requirements are actually important.
+</p>
+
+<p>
+They understand the constraints.
+</p>
+
+<p>
+They understand what the business can afford.
+</p>
+
+<p>
+They understand what risks are acceptable.
+</p>
+
+<p>
+And they understand what success actually means.
+</p>
+
+<p>
+AI can help execute a solution.
+</p>
+
+<p>
+But the quality of the solution still depends heavily on the quality of the problem being understood.
+</p>
+
+<h2>The engineer as a decision-maker</h2>
+
+<p>
+This means engineering may become less about producing answers and more about making decisions.
+</p>
+
+<p>
+Which architecture?
+</p>
+
+<p>
+Which database?
+</p>
+
+<p>
+Which model?
+</p>
+
+<p>
+Which trade-off?
+</p>
+
+<p>
+Which risks are acceptable?
+</p>
+
+<p>
+Which parts should be automated?
+</p>
+
+<p>
+Which parts require human review?
+</p>
+
+<p>
+When should we ship?
+</p>
+
+<p>
+When should we stop and redesign?
+</p>
+
+<p>
+Those decisions can have enormous consequences.
+</p>
+
+<p>
+And that is why technical fundamentals still matter.
+</p>
+
+<p>
+You cannot effectively direct something you don't understand.
+</p>
+
+<h2>But there is another problem</h2>
+
+<p>
+If one engineer with AI can accomplish the work that previously required several engineers, then becoming a better engineer is only one side of the story.
+</p>
+
+<p>
+The other side is what happens to the people who are no longer required to perform that work.
+</p>
+
+<p>
+If productivity increases dramatically, companies may build more software.
+</p>
+
+<p>
+But they may also need fewer people to build the same amount of software.
+</p>
+
+<p>
+That takes us beyond the question of what an engineer should learn.
+</p>
+
+<p>
+It takes us into a much larger question about productivity, employment and the economy.
+</p>
+
+<p>
+And that is where the next chapter begins.
+</p>
+
+<div class="navigation">
+
+    <a href="/the-ai-transition/chapters/03-but-ai-can-do-that-too.html">
+        ← But AI Can Do That Too
+    </a>
+
+    <a href="/the-ai-transition/chapters/05-the-80-20-question.html">
+        The 80/20 Question →
+    </a>
+
+</div>
+
+<div class="back">
+    <a href="/the-ai-transition/">
+        ← Back to The AI Transition
+    </a>
+</div>
+
+<div class="footer">
+    The AI Transition — An engineer's thoughts on AI, software, careers and the economy.
+</div>
+
+</div>
 
 </body>
 </html>
